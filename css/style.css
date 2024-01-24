@@ -1,0 +1,43 @@
+#menu {
+    font-weight: bold;
+    background-color: black
+}
+
+#lista {
+    background-color: black;
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Establece el color de texto predeterminado a blanco */
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(56, 68, 230); /* Cambia aquí al color deseado al pasar el cursor */
+}
+
+.dropdown-menu a.dropdown-item {
+    color: aliceblue;
+    transition: color 0.3s;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    background-color: rgb(11, 11, 11);
+    color: rgb(56, 68, 230); /* Cambia aquí al color deseado */
+}
+
+/*.navbar-brand {
+    filter: invert(100%);
+}invertir los colores del icono */
+
+.nav-item a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(../imagen/pexels-henry-&-co-1939485.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
