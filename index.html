@@ -64,6 +64,102 @@
             <p style="text-align: center;">git config --global user.email hola@gmail.com</p>
               <p style="text-align: center;">git config --list</p>
 
+              <!--
+
+                Configurando Git por primera vez
+git --version
+git config --global user.name "Juan Pablo"
+git config --global user.email hola@gmail.com
+git config --list
+
+git help config
+
+Inicializar Git en un directorio local
+mkdir carpeta
+cd carpeta
+touch README.md
+touch .gitignore
+code .
+
+Revisar los archivos que se van a subir (color rojo)
+git status
+
+Revisar si estas conectado correctamente al repositorio remoto
+git remote -v
+
+#agregar loscambios de un archivo
+git add archivo
+#agregar todos los cambios
+git add .
+
+#escribe y confirma el mensaje del cambio
+git commit -m "Mensaje"
+
+#se agrega el origen remoto de ti repositorio
+git remote add origin http://github.com/usuario/repositorio.git
+#primera vez que vinculamos el repositorio remoto al local
+git push -u origin master
+#para actualizar
+git push
+
+#descargar cambios del repositorio
+git pull
+
+Para repositorios nuevos
+git init
+git add .
+git commit -m "Mensaje"
+git branch -M main
+git remote add origin http://github.com/usuario/repositorio.git
+git push -u origin main
+
+Para repositorios existentes
+git branch -M main
+git remote add origin http://github.com/usuario/repositorio.git
+git push -u origin main
+
+Clonar repositorios
+git clone http://github.com/usuario/repositorio.git
+
+Ramas
+
+Una rama nos permite aislar una nueva funcionalidad 
+en nuestro código que después podremos añadir a la versión principal.
+# crear rama
+git branch nombre-rama
+# cambiar de rama
+git checkout nombre-rama
+# crear una rama y cambiarte a ella
+git checkout -b rama
+# eliminar rama
+git branch -d nombre-rama
+# eliminar ramas remotas
+git push origin --delete nombre-rama
+#eliminar rama (forzado)
+git branch -D nombre-rama
+# listar todas las ramas del repositorio
+git branch
+# lista ramas no fusionadas a la rama actual
+git branch --no-merged
+# lista ramas fusionadas a la rama actual
+git branch --merged
+# rebasar ramas
+git checkout rama-secundaria
+git rebase rama-principal
+
+Fusiones
+# nos cambiamos a la rama principal que quedará de la fusión
+git checkout rama-principal
+# ejecutamos el comando merge con la rama secundaria a fusionar
+git merge rama-secundaria
+
+
+
+
+
+
+              -->
+
       </div>
       <div>
 
