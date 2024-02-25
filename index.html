@@ -2,174 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" href="imagen/icon.png" type="image/png"> 
-    <link rel="stylesheet" href="css/style.css">
-    <title>CodeWeb101</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="imagen/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CodeWeb101</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand" > <img src="imagen/icon.png" width="100px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Bienvenidos</a>
+  <nav class="navbar navbar-expand-lg fixed-top" id="menu">
+    <div class="container-fluid">
+      <a class="navbar-brand"> <img src="imagen/icon.png" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Bienvenidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lenguajes
+            </a>
+
+            <ul class="dropdown-menu" id="lista">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Lenguajes
-                </a>
-                
-                <ul class="dropdown-menu" id="lista">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Git</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex" role="search">
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Git</a>
+          </li>
+        </ul>
+        <!--<form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <br><br>
-
-      <div>
-        <br><br><br> <br>
-        <u><h1 style="text-align: center;">Comandos Git</h1></u>
-        <br><br><br>
-  
-        <p style="text-align: center;">Configurando Git por primera vez</p>
-          <p style="text-align: center;">git --version</p>
-          <p style="text-align: center;">git config --global user.name "Juan Pablo"</p>
-            <p style="text-align: center;">git config --global user.email hola@gmail.com</p>
-              <p style="text-align: center;">git config --list</p>
-
-              <!--
-
-                Configurando Git por primera vez
-git --version
-git config --global user.name "Juan Pablo"
-git config --global user.email hola@gmail.com
-git config --list
-
-git help config
-
-Inicializar Git en un directorio local
-mkdir carpeta
-cd carpeta
-touch README.md
-touch .gitignore
-code .
-
-Revisar los archivos que se van a subir (color rojo)
-git status
-
-Revisar si estas conectado correctamente al repositorio remoto
-git remote -v
-
-#agregar loscambios de un archivo
-git add archivo
-#agregar todos los cambios
-git add .
-
-#escribe y confirma el mensaje del cambio
-git commit -m "Mensaje"
-
-#se agrega el origen remoto de ti repositorio
-git remote add origin http://github.com/usuario/repositorio.git
-#primera vez que vinculamos el repositorio remoto al local
-git push -u origin master
-#para actualizar
-git push
-
-#descargar cambios del repositorio
-git pull
-
-Para repositorios nuevos
-git init
-git add .
-git commit -m "Mensaje"
-git branch -M main
-git remote add origin http://github.com/usuario/repositorio.git
-git push -u origin main
-
-Para repositorios existentes
-git branch -M main
-git remote add origin http://github.com/usuario/repositorio.git
-git push -u origin main
-
-Clonar repositorios
-git clone http://github.com/usuario/repositorio.git
-
-Ramas
-
-Una rama nos permite aislar una nueva funcionalidad 
-en nuestro código que después podremos añadir a la versión principal.
-# crear rama
-git branch nombre-rama
-# cambiar de rama
-git checkout nombre-rama
-# crear una rama y cambiarte a ella
-git checkout -b rama
-# eliminar rama
-git branch -d nombre-rama
-# eliminar ramas remotas
-git push origin --delete nombre-rama
-#eliminar rama (forzado)
-git branch -D nombre-rama
-# listar todas las ramas del repositorio
-git branch
-# lista ramas no fusionadas a la rama actual
-git branch --no-merged
-# lista ramas fusionadas a la rama actual
-git branch --merged
-# rebasar ramas
-git checkout rama-secundaria
-git rebase rama-principal
-
-Fusiones
-# nos cambiamos a la rama principal que quedará de la fusión
-git checkout rama-principal
-# ejecutamos el comando merge con la rama secundaria a fusionar
-git merge rama-secundaria
-
-
-
-
-
-
-              -->
-
+              <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
       </div>
-      <div>
+    </div>
+  </nav>
+
+  <br><br>
+
+  <div>
+    <br><br><br> <br>
+    <u>
+      <h1 style="text-align: center;">Comandos Git</h1>
+    </u>
+    <br><br><br>
+
+    <h4 style="text-align: center;">Configurando Git por primera vez</h4>
+      <p style="text-align: center;">git --version</p>
+      <p style="text-align: center;">git config --global user.name "Juan Pablo"</p>
+      <p style="text-align: center;">git config --global user.email hola@gmail.com</p>
+      <p style="text-align: center;">git config --list</p>
+      <p style="text-align: center;">git help config</p>
+      
+      <h4 style="text-align: center;">Inicializar Git en un directorio local</h4>
+      <p style="text-align: center;">mkdir carpeta</p>
+      <p style="text-align: center;">cd carpeta</p>
+      <p style="text-align: center;">touch README.md</p>
+      <p style="text-align: center;">touch .gitignore</p>
+      <p style="text-align: center;">code .</p>
+
+      <h4 style="text-align: center;">Revisar los archivos que se van a subir </h4>
+      <p style="text-align: center;">git status</p>
+
+      <h4 style="text-align: center;">Revisar si estas conectado correctamente al repositorio remoto</h4>
+      <p style="text-align: center;">git remote -v</p>
+      <p style="text-align: center;">#agregar loscambios de un archivo</p>
+      <p style="text-align: center;">git add archivo</p>
+      <p style="text-align: center;">#agregar todos los cambios</p>
+      <p style="text-align: center;">git add .</p>
+      <p style="text-align: center;">#escribe y confirma el mensaje del cambio</p>
+      <p style="text-align: center;">git commit -m "Mensaje"</p>
+      <p style="text-align: center;">#se agrega el origen remoto de ti repositorio</p>
+      <p style="text-align: center;">git remote add origin http://github.com/usuario/repositorio.git</p>
+      <p style="text-align: center;">#primera vez que vinculamos el repositorio remoto al local</p>
+      <p style="text-align: center;">git push -u origin master</p>
+      <p style="text-align: center;">#para actualizar</p>
+      <p style="text-align: center;">git push</p>
+      <p style="text-align: center;">#descargar cambios del repositorio</p>
+      <p style="text-align: center;">git pull</p>
+
+      <h4 style="text-align: center;">Para repositorios nuevos</h4>
+      <p style="text-align: center;">git init</p>
+      <p style="text-align: center;">git add .</p>
+      <p style="text-align: center;">git commit -m "Mensaje"</p>
+      <p style="text-align: center;">git branch -M main</p>
+      <p style="text-align: center;">git remote add origin http://github.com/usuario/repositorio.git</p>
+      <p style="text-align: center;">git push -u origin main</p>
+
+      <h4 style="text-align: center;">Para repositorios existentes</h4>
+      <p style="text-align: center;">git branch -M main</p>
+      <p style="text-align: center;">git remote add origin http://github.com/usuario/repositorio.git</p>
+      <p style="text-align: center;">git push -u origin main</p>
+
+      <h4 style="text-align: center;">Clonar repositorios</h4>
+      <p style="text-align: center;">git clone http://github.com/usuario/repositorio.git</p>
+
+      <h4 style="text-align: center;">Ramas</h4>
+
+      <p style="text-align: center;">Una rama nos permite aislar una nueva funcionalidad </p>
+      <p style="text-align: center;">en nuestro código que después podremos añadir a la versión principal.</p>
+      <p style="text-align: center;"># crear rama</p>
+      <p style="text-align: center;">git branch nombre-rama</p>
+      <p style="text-align: center;"># cambiar de rama</p>
+      <p style="text-align: center;">git checkout nombre-rama</p>
+      <p style="text-align: center;"># crear una rama y cambiarte a ella</p>
+      <p style="text-align: center;">git checkout -b rama</p>
+      <p style="text-align: center;"># eliminar rama</p>
+      <p style="text-align: center;">git branch -d nombre-rama</p>
+      <p style="text-align: center;"># eliminar ramas remotas</p>
+      <p style="text-align: center;">git push origin --delete nombre-rama</p>
+      <p style="text-align: center;">#eliminar rama (forzado)</p>
+      <p style="text-align: center;">git branch -D nombre-rama</p>
+      <p style="text-align: center;"># listar todas las ramas del repositorio</p>
+      <p style="text-align: center;">git branch</p>
+      <p style="text-align: center;"># lista ramas no fusionadas a la rama actual</p>
+      <p style="text-align: center;">git branch --no-merged</p>
+      <p style="text-align: center;"># lista ramas fusionadas a la rama actual</p>
+      <p style="text-align: center;">git branch --merged</p>
+      <p style="text-align: center;"># rebasar ramas</p>
+      <p style="text-align: center;">git checkout rama-secundaria</p>
+      <p style="text-align: center;">git rebase rama-principal</p>
+
+      <h4 style="text-align: center;">Fusiones</h4>
+
+      <p style="text-align: center;"># nos cambiamos a la rama principal que quedará de la fusión</p>
+      <p style="text-align: center;">git checkout rama-principal</p>
+      <p style="text-align: center;"># ejecutamos el comando merge con la rama secundaria a fusionar</p>
+      <p style="text-align: center;">git merge rama-secundaria</p>
+
+
+  </div>
+  <div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
