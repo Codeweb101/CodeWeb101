@@ -63,90 +63,153 @@
       <h1 style="text-align: center;">Comandos Git</h1>
     </u>
     <br><br><br>
+    <div class="container">
+      <div class="row">
 
-    <h4 style="text-align: center;">Configurando Git por primera vez</h4>
-      <p style="text-align: center;">git --version</p>
-      <p style="text-align: center;">git config --global user.name "Juan Pablo"</p>
-      <p style="text-align: center;">git config --global user.email hola@gmail.com</p>
-      <p style="text-align: center;">git config --list</p>
-      <p style="text-align: center;">git help config</p>
-      
-      <h4 style="text-align: center;">Inicializar Git en un directorio local</h4>
-      <p style="text-align: center;">mkdir carpeta</p>
-      <p style="text-align: center;">cd carpeta</p>
-      <p style="text-align: center;">touch README.md</p>
-      <p style="text-align: center;">touch .gitignore</p>
-      <p style="text-align: center;">code .</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Configurando Git por primera vez</h4>
+              <p>git --version</p>
+              <p>git config --global user.name "Juan Pablo"</p>
+              <p>git config --global user.email hola@gmail.com</p>
+              <p>git config --list</p>
+              <p>git help config</p>
+            </div>
+          </div>
+        </div>
 
-      <h4 style="text-align: center;">Revisar los archivos que se van a subir </h4>
-      <p style="text-align: center;">git status</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Inicializar Git en un directorio local</h4>
+              <p>mkdir carpeta</p>
+              <p>cd carpeta</p>
+              <p>touch README.md</p>
+              <p>touch .gitignore</p>
+              <p>code .</p>
+            </div>
+          </div>
+        </div>
 
-      <h4 style="text-align: center;">Revisar si estas conectado correctamente al repositorio remoto</h4>
-      <p style="text-align: center;">git remote -v</p>
-      <p style="text-align: center;">#agregar loscambios de un archivo</p>
-      <p style="text-align: center;">git add archivo</p>
-      <p style="text-align: center;">#agregar todos los cambios</p>
-      <p style="text-align: center;">git add .</p>
-      <p style="text-align: center;">#escribe y confirma el mensaje del cambio</p>
-      <p style="text-align: center;">git commit -m "Mensaje"</p>
-      <p style="text-align: center;">#se agrega el origen remoto de ti repositorio</p>
-      <p style="text-align: center;">git remote add origin http://github.com/usuario/repositorio.git</p>
-      <p style="text-align: center;">#primera vez que vinculamos el repositorio remoto al local</p>
-      <p style="text-align: center;">git push -u origin master</p>
-      <p style="text-align: center;">#para actualizar</p>
-      <p style="text-align: center;">git push</p>
-      <p style="text-align: center;">#descargar cambios del repositorio</p>
-      <p style="text-align: center;">git pull</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Revisar los archivos que se van a subir</h4>
+              <p>git status</p>
+            </div>
+          </div>
+        </div>
 
-      <h4 style="text-align: center;">Para repositorios nuevos</h4>
-      <p style="text-align: center;">git init</p>
-      <p style="text-align: center;">git add .</p>
-      <p style="text-align: center;">git commit -m "Mensaje"</p>
-      <p style="text-align: center;">git branch -M main</p>
-      <p style="text-align: center;">git remote add origin http://github.com/usuario/repositorio.git</p>
-      <p style="text-align: center;">git push -u origin main</p>
 
-      <h4 style="text-align: center;">Para repositorios existentes</h4>
-      <p style="text-align: center;">git branch -M main</p>
-      <p style="text-align: center;">git remote add origin http://github.com/usuario/repositorio.git</p>
-      <p style="text-align: center;">git push -u origin main</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Revisar si estas conectado correctamente al repositorio remoto</h4>
+              </h4>
+              <p>git remote -v</p>
+              <p>#agregar loscambios de un archivo</p>
+              <p>git add archivo</p>
+              <p>#agregar todos los cambios</p>
+              <p>git add .</p>
+              <p>#escribe y confirma el mensaje del cambio</p>
+              <p>git commit -m "Mensaje"</p>
+              <p>#se agrega el origen remoto de ti repositorio</p>
+              <p>git remote add origin http://github.com/usuario/repositorio</p>
+              <p>#primera vez que vinculamos el repositorio remoto al local</p>
+              <p>git push -u origin master</p>
+              <p>#para actualizar</p>
+              <p>git push</p>
+              <p>#descargar cambios del repositorio</p>
+              <p>git pull</p>
+            </div>
+          </div>
+        </div>
 
-      <h4 style="text-align: center;">Clonar repositorios</h4>
-      <p style="text-align: center;">git clone http://github.com/usuario/repositorio.git</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Para repositorios nuevos</h4>
+              </h4>
+              <p>>git init</p>
+              <p>git add .</p>
+              <p>git commit -m "Mensaje"</p>
+              <p>git branch -M main</p>
+              <p>git remote add origin http://github.com/usuario/repositorio.git</p>
+              <p>git push -u origin main</p>
+            </div>
+          </div>
+        </div>
 
-      <h4 style="text-align: center;">Ramas</h4>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Para repositorios existentes</h4>
+              </h4>
+              <p>git branch -M main</p>
+              <p>git remote add origin http://github.com/usuario/repositorio</p>
+              <p>git push -u origin main</p>
+            </div>
+          </div>
+        </div>
 
-      <p style="text-align: center;">Una rama nos permite aislar una nueva funcionalidad </p>
-      <p style="text-align: center;">en nuestro código que después podremos añadir a la versión principal.</p>
-      <p style="text-align: center;"># crear rama</p>
-      <p style="text-align: center;">git branch nombre-rama</p>
-      <p style="text-align: center;"># cambiar de rama</p>
-      <p style="text-align: center;">git checkout nombre-rama</p>
-      <p style="text-align: center;"># crear una rama y cambiarte a ella</p>
-      <p style="text-align: center;">git checkout -b rama</p>
-      <p style="text-align: center;"># eliminar rama</p>
-      <p style="text-align: center;">git branch -d nombre-rama</p>
-      <p style="text-align: center;"># eliminar ramas remotas</p>
-      <p style="text-align: center;">git push origin --delete nombre-rama</p>
-      <p style="text-align: center;">#eliminar rama (forzado)</p>
-      <p style="text-align: center;">git branch -D nombre-rama</p>
-      <p style="text-align: center;"># listar todas las ramas del repositorio</p>
-      <p style="text-align: center;">git branch</p>
-      <p style="text-align: center;"># lista ramas no fusionadas a la rama actual</p>
-      <p style="text-align: center;">git branch --no-merged</p>
-      <p style="text-align: center;"># lista ramas fusionadas a la rama actual</p>
-      <p style="text-align: center;">git branch --merged</p>
-      <p style="text-align: center;"># rebasar ramas</p>
-      <p style="text-align: center;">git checkout rama-secundaria</p>
-      <p style="text-align: center;">git rebase rama-principal</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Clonar repositorios</h4>
+              </h4>
+              <p>>git clone http://github.com/usuario/repositorio</p>
+            </div>
+          </div>
+        </div>
 
-      <h4 style="text-align: center;">Fusiones</h4>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Ramas</h4>
+              </h4>
+              <p>Una rama nos permite aislar una nueva funcionalidad</p>
+              <p>en nuestro código que después podremos añadir a la versión principal.</p>
+              <p># crear rama</p>
+              <p>git branch nombre-rama</p>
+              <p># cambiar de rama</p>
+              <p>git checkout nombre-rama</p>
+              <p># crear una rama y cambiarte a ella</p>
+              <p>git checkout -b rama</p>
+              <p># eliminar rama</p>
+              <p>git branch -d nombre-rama</p>
+              <p># eliminar ramas remotas</p>
+              <p>git push origin --delete nombre-rama</p>
+              <p>#eliminar rama (forzado)</p>
+              <p>git branch -D nombre-rama</p>
+              <p># listar todas las ramas del repositorio</p>
+              <p>git branch</p>
+              <p># lista ramas no fusionadas a la rama actual</p>
+              <p>git branch --no-merged</p>
+              <p># lista ramas fusionadas a la rama actual</p>
+              <p>git branch --merged</p>
+              <p># rebasar ramas</p>
+              <p>git checkout rama-secundaria</p>
+              <p>git rebase rama-principal</p>
+            </div>
+          </div>
+        </div>
 
-      <p style="text-align: center;"># nos cambiamos a la rama principal que quedará de la fusión</p>
-      <p style="text-align: center;">git checkout rama-principal</p>
-      <p style="text-align: center;"># ejecutamos el comando merge con la rama secundaria a fusionar</p>
-      <p style="text-align: center;">git merge rama-secundaria</p>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light mb-3">
+            <div class="card-body">
+              <h4 style="color: white;">Fusiones</h4>
+              </h4>
+              <p># nos cambiamos a la rama principal que quedará de la fusión</p>
+              <p>git checkout rama-principal</p>
+              <p># ejecutamos el comando merge con la rama secundaria a fusionar</p>
+              <p>git merge rama-secundaria</p>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
 
   </div>
   <div>

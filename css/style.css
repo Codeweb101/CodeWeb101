@@ -41,3 +41,11 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
+.card {
+    border: 2px solid #4d4d4d; /* Color del borde de los cuadros */
+  }
+  
+  .card-body {
+    background-color: #1e1e1e; /* Color de fondo de los cuadros */
+  }
