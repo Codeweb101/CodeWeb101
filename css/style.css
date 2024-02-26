@@ -44,18 +44,18 @@ body{
 
 .card {
     border: 2px solid #4d4d4d;
-    margin-bottom: 20px; /* Ajusta el margen inferior para igualar el espaciado */
+    margin-bottom: 20px; 
   }
   
   .card-body {
     background-color: #1e1e1e;
-    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    height: 100%; 
   }
   
   .card-title {
-    margin-bottom: 15px; /* Espaciado uniforme entre el título y el contenido */
+    margin-bottom: 15px; 
   }
   
   .card-text {
-    margin-bottom: 10px; /* Espaciado uniforme entre los párrafos */
+    margin-bottom: 10px; 
   }
