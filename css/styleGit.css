@@ -2,7 +2,7 @@
         /* Efecto de brillo permanente */
         filter: drop-shadow(0 0 10px rgba(17, 197, 158, 0.751));
         position: relative;
-        left: 32%;
+        right: 1%;
       }
       
       .container {
@@ -10,9 +10,8 @@
       }
       
       .imagen-titulo img {
-        width: 100px; /* Ajusta el ancho de la imagen */
-        margin-left: 400px;/* Ajusta la distancia entre la imagen y el H1 */
-        margin-bottom: -70px;
+        width: 100px; 
+        margin-bottom: -30px;
       }
       
       
@@ -21,7 +20,7 @@
         font-size: 3em;
         text-transform: uppercase;
         letter-spacing: 3px;
-        margin: 0;
+        margin-top: 30px;
         padding: 0;
         border: none;
         cursor: pointer;
