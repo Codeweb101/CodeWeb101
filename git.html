@@ -7,7 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="icon" href="imagen/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleGit.css">
   <title>CodeWeb101</title>
 </head>
 
@@ -60,167 +64,229 @@
   <div>
     <br><br><br> <br>
     <u>
-      <h1 style="text-align: center;">Comandos Git</h1>
+      <h1 style="text-align: center; color: aliceblue;">Comandos Git</h1>
     </u>
     <br><br><br>
-    <div class="container">
-      <div class="row">
+    <div class="dropdown1">
+      <button class="dropbtn">Configurando Git por primera vez</button>
+      <div class="dropdown1-content">
+        <ul>
+          <li>git --version</li>
+          <li>git config --global user.name "Juan Pablo"</li>
+          <li>git config --global user.email hola@gmail.com</li>
+          <li>git config --list</li>
+          <li>git help config</li>
 
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Configurando Git por primera vez</h4>
-              <p>git --version</p>
-              <p>git config --global user.name "Juan Pablo"</p>
-              <p>git config --global user.email hola@gmail.com</p>
-              <p>git config --list</p>
-              <p>git help config</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Inicializar Git en un directorio local</h4>
-              <p>mkdir carpeta</p>
-              <p>cd carpeta</p>
-              <p>touch README.md</p>
-              <p>touch .gitignore</p>
-              <p>code .</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Revisar los archivos que se van a subir</h4>
-              <p>git status</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Revisar si estas conectado correctamente al repositorio remoto</h4>
-              </h4>
-              <p>git remote -v</p>
-              <p>#agregar loscambios de un archivo</p>
-              <p>git add archivo</p>
-              <p>#agregar todos los cambios</p>
-              <p>git add .</p>
-              <p>#escribe y confirma el mensaje del cambio</p>
-              <p>git commit -m "Mensaje"</p>
-              <p>#se agrega el origen remoto de ti repositorio</p>
-              <p>git remote add origin http://github.com/usuario/repositorio</p>
-              <p>#primera vez que vinculamos el repositorio remoto al local</p>
-              <p>git push -u origin master</p>
-              <p>#para actualizar</p>
-              <p>git push</p>
-              <p>#descargar cambios del repositorio</p>
-              <p>git pull</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Para repositorios nuevos</h4>
-              </h4>
-              <p>>git init</p>
-              <p>git add .</p>
-              <p>git commit -m "Mensaje"</p>
-              <p>git branch -M main</p>
-              <p>git remote add origin http://github.com/usuario/repositorio.git</p>
-              <p>git push -u origin main</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Para repositorios existentes</h4>
-              </h4>
-              <p>git branch -M main</p>
-              <p>git remote add origin http://github.com/usuario/repositorio</p>
-              <p>git push -u origin main</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Clonar repositorios</h4>
-              </h4>
-              <p>>git clone http://github.com/usuario/repositorio</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Ramas</h4>
-              </h4>
-              <p>Una rama nos permite aislar una nueva funcionalidad</p>
-              <p>en nuestro código que después podremos añadir a la versión principal.</p>
-              <p># crear rama</p>
-              <p>git branch nombre-rama</p>
-              <p># cambiar de rama</p>
-              <p>git checkout nombre-rama</p>
-              <p># crear una rama y cambiarte a ella</p>
-              <p>git checkout -b rama</p>
-              <p># eliminar rama</p>
-              <p>git branch -d nombre-rama</p>
-              <p># eliminar ramas remotas</p>
-              <p>git push origin --delete nombre-rama</p>
-              <p>#eliminar rama (forzado)</p>
-              <p>git branch -D nombre-rama</p>
-              <p># listar todas las ramas del repositorio</p>
-              <p>git branch</p>
-              <p># lista ramas no fusionadas a la rama actual</p>
-              <p>git branch --no-merged</p>
-              <p># lista ramas fusionadas a la rama actual</p>
-              <p>git branch --merged</p>
-              <p># rebasar ramas</p>
-              <p>git checkout rama-secundaria</p>
-              <p>git rebase rama-principal</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body">
-              <h4 style="color: white;">Fusiones</h4>
-              </h4>
-              <p># nos cambiamos a la rama principal que quedará de la fusión</p>
-              <p>git checkout rama-principal</p>
-              <p># ejecutamos el comando merge con la rama secundaria a fusionar</p>
-              <p>git merge rama-secundaria</p>
-            </div>
-          </div>
-        </div>
-
+        </ul>
       </div>
     </div>
+  </div>
+
+  <div class="dropdown1">
+    <button class="dropbtn">Inicializar Git en un directorio local</button>
+    <div class="dropdown1-content">
+      <ul>
+        <li>mkdir carpeta</li>
+        <li>cd carpeta</li>
+        <li>touch README.md</li>
+        <li>touch .gitignore</li>
+        <li>code .</li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="dropdown1">
+    <button class="dropbtn">Revisar los archivos que se van a subir</button>
+    <div class="dropdown1-content">
+      <ul>
+        <li>git status</li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="dropdown1">
+    <button class="dropbtn">Revisar si estas conectado correctamente al repositorio remoto</button>
+    <div class="dropdown1-content">
+      <ul>
+        <li>git remote -v</li>
+        <b>Agregar los cambios de un archivo</b>
+        <ul>
+          <li>git add archivo</li>
+        </ul>
+        <b>Agregar todos los cambios</b>
+        <ul>
+          <li>git add .</li>
+        </ul>
+        <b>Escribe y confirma el mensaje del cambio</b>
+        <ul>
+          <li>git commit -m "Mensaje"</li>
+        </ul>
+        <b>Se agrega el origen remoto de ti repositorio</b>
+        <ul>
+          <li>git remote add origin http://github.com/usuario/repositorio</li>
+        </ul>
+        <b>Primera vez que vinculamos el repositorio remoto al local</b>
+        <ul>
+          <li>git push -u origin master</li>
+        </ul>
+        <b>Para actualizar</b>
+        <ul>
+          <li>git push</li>
+        </ul>
+        <b>Descargar cambios del repositorio</b>
+        <ul>
+          <li>git pull</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="dropdown1">
+    <button class="dropbtn">Para repositorios nuevos</button>
+    <div class="dropdown1-content">
+      <ul>
+        <li>git init</li>
+        <li>git add .</li>
+        <li>git commit -m "Mensaje"</li>
+        <li>git branch -M main</li>
+        <li>git remote add origin http://github.com/usuario/repositorio.git</li>
+        <li>git push -u origin main</li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="dropdown1">
+    <button class="dropbtn">Para repositorios existentes</button>
+    <div class="dropdown1-content">
+      <ul>
+        <li>git branch -M main</li>
+        <li>git remote add origin http://github.com/usuario/repositorio.git</li>
+        <li>git push -u origin main</li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="dropdown1">
+    <button class="dropbtn">Clonar repositorios</button>
+    <div class="dropdown1-content">
+      <ul>
+        <li>git clone http://github.com/usuario/repositorio</li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="dropdown1">
+    <button class="dropbtn">Ramas</button>
+    <div class="dropdown1-content">
+      <ul>
+        <ul><b><u>Una rama nos permite aislar una nueva funcionalidad en nuestro código que después podremos añadir a la
+              versión principal.</u></b></ul>
+
+        <b>Crear rama</b>
+        <ul>
+          <li>git branch nombre-rama</li>
+        </ul>
+
+        <b>Cambiar de rama</b>
+        <ul>
+          <li>git checkout nombre-rama</li>
+        </ul>
+
+        <b>Crear una rama y cambiarte a ella</b>
+        <ul>
+          <li>git checkout -b rama</li>
+        </ul>
+
+        <b>Eliminar rama</b>
+        <ul>
+          <li>git branch -d nombre-rama</li>
+        </ul>
+
+        <b>Eliminar ramas remotas</b>
+        <ul>
+          <li>git push origin --delete nombre-rama</li>
+        </ul>
+
+        <b>Eliminar rama (forzado)</b>
+        <ul>
+          <li>git branch -D nombre-rama</li>
+        </ul>
+
+        <b>Listar todas las ramas del repositorio</b>
+        <ul>
+          <li>git branch</li>
+        </ul>
+
+        <b>Lista ramas no fusionadas a la rama actual</b>
+        <ul>
+          <li>git branch --no-merged</li>
+        </ul>
+
+        <b>Lista ramas fusionadas a la rama actual</b>
+        <ul>
+          <li>git branch --merged</li>
+        </ul>
+
+        <b>Rebasar ramas</b>
+        <ul>
+          <li>git checkout rama-secundaria</li>
+          <li>git rebase rama-principal</li>
+        </ul>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="dropdown1">
+    <button class="dropbtn">Fusiones</button>
+    <div class="dropdown1-content">
+      <ul>
+        <b>Nos cambiamos a la rama principal que quedará de la fusión</b>
+        <ul>
+          <li>git checkout rama-principal</li>
+        </ul>
+
+        <b>Ejecutamos el comando merge con la rama secundaria a fusionar</b>
+        <ul>
+          <li>git merge rama-secundaria</li>
+        </ul>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+  </div>
+  </div>
 
   </div>
   <div>
+  </div>
+  </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
