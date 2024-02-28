@@ -1,6 +1,6 @@
 #menu {
     font-weight: bold;
-    background-color: black
+    background-color: black;
 }
 
 #lista {
@@ -8,12 +8,12 @@
 }
 
 .navbar-nav .nav-link {
-    color: white; /* Establece el color de texto predeterminado a blanco */
+    color: white;
     transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgb(56, 68, 230); /* Cambia aquí al color deseado al pasar el cursor */
+    color: rgb(56, 68, 230);
 }
 
 .dropdown-menu a.dropdown-item {
@@ -23,39 +23,36 @@
 
 .dropdown-menu a.dropdown-item:hover {
     background-color: rgb(11, 11, 11);
-    color: rgb(56, 68, 230); /* Cambia aquí al color deseado */
+    color: rgb(56, 68, 230);
 }
-
-/*.navbar-brand {
-    filter: invert(100%);
-}invertir los colores del icono */
 
 .nav-item a {
     text-decoration: none;
     color: aliceblue;
 }
 
-body{
-    background-color:  #1e1e1e;
+body {
+    background-color: #1e1e1e;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+#nosotros,
+#resumen,
+#integrantes {
+    
+    background-color: #343a40; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
 .card {
-    border: 2px solid #4d4d4d;
-    margin-bottom: 20px; 
-  }
-  
-  .card-body {
-    background-color: #1e1e1e;
-    height: 100%; 
-  }
-  
-  .card-title {
-    margin-bottom: 15px; 
-  }
-  
-  .card-text {
-    margin-bottom: 10px; 
-  }
+    border: 2px solid #4d4d4d; 
+}
+
+
+
+
+
+    
