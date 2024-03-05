@@ -1,111 +1,104 @@
-    .button1 {
-        /* Efecto de brillo permanente */
-        filter: drop-shadow(0 0 10px rgba(17, 197, 158, 0.751));
-        position: relative;
-        right: 1%;
-      }
-      
-      .container {
-        text-align: center;
-      }
-      
-      .imagen-titulo img {
-        width: 100px; 
-        margin-bottom: -30px;
-      }
-      
-      
-      h1 {
-        font-family: "Rajdhani", sans-serif;
-        font-size: 3em;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-top: 30px;
-        padding: 0;
-        border: none;
-        cursor: pointer;
-      }  
-    
+.button1 {
+  filter: drop-shadow(0 0 10px rgba(17, 197, 158, 0.751));
+  position: relative;
+  right: 1%;
+}
 
-    .button {
-        margin: 0;
-        height: auto;
-        background: transparent;
-        padding: 0;
-        border: none;
-        cursor: pointer;
-      }
-      
-      /* Button styling */
-      .button {
-        --border-right: 6px;
-        --text-stroke-color: rgba(255,255,255, 0.6);
-        --animation-color: #37FF8B;
-        --fs-size: 2em;
-        letter-spacing: 3px;
-        text-decoration: none;
-        font-size: var(--fs-size);
-        font-family: "Rajdhani", sans-serif;
-        position: relative;
-        text-transform: uppercase;
-        color: transparent;
-        -webkit-text-stroke: 1px var(--text-stroke-color);
-        /* Address spaces in animation */
-        white-space: nowrap; /* Prevent word wrapping */
-       
-      }
-      
-      /* Text content when hovering */
-      .hover-text {
-        position: absolute;
-        box-sizing: border-box;
-        content: attr(data-text);
-        color: var(--animation-color);
-        width: 0%;
-        inset: 0;
-        border-right: var(--border-right) solid var(--animation-color);
-        overflow: hidden;
-        transition: 3.0s;
-        -webkit-text-stroke: 1px var(--animation-color);
-      }
-      
-      /* Hover animation */
-      .button:hover .hover-text {
-        width: 100%;
-        filter: drop-shadow(0 0 23px var(--animation-color));
-      }
-      
-    .dropdown1 {
-        font-family: "Rajdhani", sans-serif;
-        font-size: larger;
-        position: relative;
-        justify-content: center;
-        top: 25%;
-        left: 25%;
-    }
+.container {
+  text-align: center;
+}
 
-    .dropdown1-content {
-        display: none;
-        position: relative;
-        background-color: #1e1e1e;
-        color: #f1f1f1;
-        min-width: 160px;
-        z-index: 1;
-        font-size: x-large;
+.imagen-titulo img {
+  width: 100px;
+  margin-bottom: -30px;
+}
 
-    }
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
 
-    .dropdown1-content a {
-        color: rgb(23, 23, 24);
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
 
-    .dropdown1-content a:hover {
-        background-color: #f1f1f1;
-    }
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Rajdhani", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  white-space: nowrap; 
+  transition: color 2s;
+}
 
-    .dropdown1:hover .dropdown1-content {
-        display: block;
-    }
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: width 2s, filter 2s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+.dropdown1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: larger;
+  position: relative;
+  justify-content: center;
+  top: 25%;
+  left: 25%;
+}
+
+.dropdown1-content {
+  position: relative;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 2s; 
+}
+
+.dropdown1-content a {
+  color: rgb(23, 23, 24);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown1-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown1:hover .dropdown1-content {
+  max-height: 500px; 
+}
+
