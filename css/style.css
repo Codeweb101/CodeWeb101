@@ -1,3 +1,8 @@
+.body{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: large;
+}
+
 #menu {
     font-weight: bold;
     background-color: black;
@@ -7,6 +12,43 @@
     background-color: black;
 }
 
+/* Contenedor del título */
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima del contenedor */
+    background-color: #1f1f1f; /* Color de fondo negro */
+  }
+  
+  .titulo-maquina {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 48px;
+    font-weight: bold;
+    color: #b3cdde; 
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    overflow: hidden; /* Evita desbordamiento de texto */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    animation: titulo-maquina 5s steps(20) infinite;
+    text-shadow: 0 0 10px rgba(255,255,255,0.8); /* Brillo */
+  }
+  
+  @keyframes titulo-maquina {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 20%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  
+  
 .navbar-nav .nav-link {
     color: white;
     transition: color 0.5s;
@@ -41,7 +83,7 @@ body {
 #nosotros,
 #resumen,
 #integrantes {
-    background-color: #343a40; 
+    background-color: #1e1e1e; 
     padding: 20px; 
     border-radius: 10px; 
 }
