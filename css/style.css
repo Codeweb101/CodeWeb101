@@ -95,7 +95,7 @@ body {
 }
 
 .card-body a:hover {
-    color: green;
+    color: rgb(23, 183, 183);
 }
 
 .integrante {
