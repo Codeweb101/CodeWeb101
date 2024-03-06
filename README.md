@@ -12,10 +12,16 @@ La página esta armada principalmente con Bootstrap.
 
 ---
 
-Si quieres formar parte puedes contactarte con nosotros.
+Si quieres dejar tu granito de arena es bienvenido.
 
 ---
 
-Integrantes : Juan Pablo Lopez , Vanessa Proaño.
+Integrantes : 
+- Juan Pablo Lopez : 
+    - [Linkedin](https://www.linkedin.com/in/juan-pablo-lopez-965bba169/)
+    - [Github](https://github.com/megagringa)  
+- Vanessa Proaño :
+    - [Linkedin](https://www.linkedin.com/in/vanessa-proa%C3%B1o-acebo-0478a075/)
+    - [Github](https://github.com/mishka911)
 
 ---

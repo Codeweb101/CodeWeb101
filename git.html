@@ -64,10 +64,10 @@
         </h1>
       </div>
     </div>
-    
-      
-      
-  
+
+
+
+
     <br><br><br>
     <div class="dropdown1">
       <button class="dropbtn button" data-text="Awesome">
@@ -77,215 +77,167 @@
       <div class="dropdown1-content">
         <ul>
           <li>git --version</li>
+          <li>git config</li>
           <li>git config --global user.name "Tu Nombre"</li>
           <li>git config --global user.email hola@gmail.com</li>
-          <li>git config --list</li>
-          <li>git help config</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Revisar los archivos que se van a subir&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Revisar los archivos que se van a subir&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
+        <ul>
+          <li>git status</li>
 
         </ul>
       </div>
     </div>
 
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Revisar los archivos que se van a subir&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Revisar los archivos que se van a subir&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <li>git status</li>
 
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Revisar si estas conectado correctamente al repositorio remoto&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Revisar si estas conectado correctamente al repositorio remoto&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <li>git remote -v</li>
-        <b>Agregar los cambios de un archivo</b>
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Revisar si estas conectado correctamente al repositorio remoto&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Revisar si estas conectado correctamente al repositorio
+          remoto&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
         <ul>
+          <li>git remote -v</li>
+          <b> - Agregar los cambios de un archivo</b>
           <li>git add archivo</li>
-        </ul>
-        <b>Agregar todos los cambios</b>
-        <ul>
+          <b> - Agregar todos los cambios</b>
           <li>git add .</li>
-        </ul>
-        <b>Escribe y confirma el mensaje del cambio</b>
-        <ul>
+          <b> - Escribe y confirma el mensaje del cambio</b>
           <li>git commit -m "Mensaje"</li>
-        </ul>
-        <b>Se agrega el origen remoto de ti repositorio</b>
-        <ul>
-          <li>git remote add origin http://github.com/usuario/repositorio</li>
-        </ul>
-        <b>Primera vez que vinculamos el repositorio remoto al local</b>
-        <ul>
+          <b> - Se agrega el origen remoto de tu repositorio</b>
+          <li> - git remote add origin http://github.com/usuario/repositorio</li>
+          <b> - Primera vez que vinculamos el repositorio remoto al local</b>
           <li>git push -u origin master</li>
-        </ul>
-        <b>Para actualizar</b>
-        <ul>
+          <b> - Para las siguientes actualisaciones</b>
           <li>git push</li>
-        </ul>
-        <b>Descargar cambios del repositorio</b>
-        <ul>
+          <b> - Descargar lo ultimos cambios del repositorio</b>
           <li>git pull</li>
         </ul>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-  
 
 
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Para repositorios nuevos&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Para repositorios nuevos&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <li>git init</li>
-        <li>git add .</li>
-        <li>git commit -m "Mensaje"</li>
-        <li>git branch -M main</li>
-        <li>git remote add origin http://github.com/usuario/repositorio.git</li>
-        <li>git push -u origin main</li>
 
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Para repositorios existentes&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Para repositorios existentes&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <li>git branch -M main</li>
-        <li>git remote add origin http://github.com/usuario/repositorio.git</li>
-        <li>git push -u origin main</li>
-
-      </ul>
-    </div>
-  </div>
-  
-
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Clonar Repositorios&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Clonar Repositorios&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <li>git clone http://github.com/usuario/repositorio</li>
-
-      </ul>
-    </div>
-  </div>
-  
-
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Ramas&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Ramas&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <ul><b><u>Una rama nos permite aislar una nueva funcionalidad en nuestro código que después podremos añadir a la
-              versión principal.</u></b></ul>
-
-        <b>Crear rama</b>
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Para repositorios nuevos&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Para repositorios nuevos&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
         <ul>
+          <li>git init</li>
+          <li>git add .</li>
+          <li>git commit -m "Mensaje"</li>
+          <li>git remote add origin http://github.com/usuario/repositorio</li>
+          <li>git push -u origin main</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Para repositorios existentes&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Para repositorios existentes&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
+        <ul>
+          <li>git branch -M main</li>
+          <li>git remote add origin http://github.com/usuario/repositorio.git</li>
+          <li>git push -u origin main</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Clonar Repositorios&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Clonar Repositorios&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
+        <ul>
+          <li>git clone http://github.com/usuario/repositorio</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Ramas&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Ramas&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
+        <ul>
+          <b> - Una rama nos permite aislar una nueva funcionalidad en nuestro código que después podremos añadir a la
+            versión principal.</b>
+          <b> - Crear rama</b>
           <li>git branch nombre-rama</li>
-        </ul>
-
-        <b>Cambiar de rama</b>
-        <ul>
+          <b> - Cambiar de rama</b>
           <li>git checkout nombre-rama</li>
-        </ul>
-
-        <b>Crear una rama y cambiarte a ella</b>
-        <ul>
+          <b> - Crear una rama y cambiarte a ella</b>
           <li>git checkout -b rama</li>
-        </ul>
-
-        <b>Eliminar rama</b>
-        <ul>
+          <b> - Eliminar rama</b>
           <li>git branch -d nombre-rama</li>
-        </ul>
-
-        <b>Eliminar ramas remotas</b>
-        <ul>
+          <b> - Eliminar ramas remotas</b>
           <li>git push origin --delete nombre-rama</li>
-        </ul>
-
-        <b>Eliminar rama (forzado)</b>
-        <ul>
+          <b> - Eliminar rama (forzado)</b>
           <li>git branch -D nombre-rama</li>
-        </ul>
-
-        <b>Listar todas las ramas del repositorio</b>
-        <ul>
+          <b> - Listar todas las ramas del repositorio</b>
           <li>git branch</li>
-        </ul>
-
-        <b>Lista ramas no fusionadas a la rama actual</b>
-        <ul>
+          <b> - Lista ramas no fusionadas a la rama actual</b>
           <li>git branch --no-merged</li>
-        </ul>
-
-        <b>Lista ramas fusionadas a la rama actual</b>
-        <ul>
+          <b> - Lista ramas fusionadas a la rama actual</b>
           <li>git branch --merged</li>
-        </ul>
 
-        <b>Rebasar ramas</b>
-        <ul>
-          <li>git checkout rama-secundaria</li>
-          <li>git rebase rama-principal</li>
-        </ul>
+          <b>Rebasar ramas</b>
+          <ul>
+            <li>git checkout rama-secundaria</li>
+            <li>git rebase rama-principal</li>
+          </ul>
 
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-  
 
 
-  <div class="dropdown1">
-    <button class="dropbtn button" data-text="Awesome">
-      <span class="actual-text">&nbsp;Fusiones&nbsp;</span>
-      <span aria-hidden="true" class="hover-text">&nbsp;Fusiones&nbsp;</span>
-    </button>
-    <div class="dropdown1-content">
-      <ul>
-        <b>Nos cambiamos a la rama principal que quedará de la fusión</b>
+
+    <div class="dropdown1">
+      <button class="dropbtn button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Fusiones&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Fusion&nbsp;</span>
+      </button>
+      <div class="dropdown1-content">
         <ul>
+          <b> - Nos cambiamos a la rama principal que quedará de la fusión</b>
           <li>git checkout rama-principal</li>
-        </ul>
-  
-        <b>Ejecutamos el comando merge con la rama secundaria a fusionar</b>
-        <ul>
+          <b> - Ejecutamos el comando merge con la rama secundaria a fusionar</b>
           <li>git merge rama-secundaria</li>
         </ul>
-  
-      </ul>
+      </div>
     </div>
-  </div>
-  
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
