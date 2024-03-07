@@ -67,7 +67,9 @@ h1 {
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
+  animation: animateLeftToRight 2s ease-in-out; /* Adjust timing and easing as needed */
 }
+
 
 .dropdown1 {
   font-family: "Rajdhani", sans-serif;
