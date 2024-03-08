@@ -84,7 +84,7 @@ h1 {
   color: #f1f1f1;
   max-height: 0; 
   overflow: hidden; 
-  transition: max-height 2s; 
+  transition: max-height 6s; 
 }
 
 .dropdown1-content a {
