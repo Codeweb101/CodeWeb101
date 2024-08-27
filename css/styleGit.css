@@ -50,7 +50,6 @@ h1 {
   transition: color 2s;
 }
 
-
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -82,9 +81,9 @@ h1 {
   position: relative;
   background-color: #1e1e1e;
   color: #f1f1f1;
-  max-height: 0; 
-  overflow: hidden; 
-  transition: max-height 2s; 
+  max-height: none; /* Siempre visible */
+  overflow: visible; /* Asegura que el contenido no se oculte */
+  transition: none; /* Elimina la transición de despliegue */
 }
 
 .dropdown1-content a {
